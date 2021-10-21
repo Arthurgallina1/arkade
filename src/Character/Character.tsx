@@ -9,5 +9,5 @@ type CharacterType = {
 }
 
 export default function Character({ x, y }: CharacterType) {
-  return <S.Container left={x * SIZE} top={x * SIZE}></S.Container>
+  return <S.Container size={SIZE} left={x * SIZE} top={y * SIZE}></S.Container>
 }

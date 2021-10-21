@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: #24282f;
   color: white;
-  height: 100vh;
+  height: 95vh;
 `
 
 export const Map = styled.div`
