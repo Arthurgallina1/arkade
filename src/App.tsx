@@ -4,7 +4,7 @@ import Character from './Character/Character'
 import useCharacter from './hooks/useCharacter'
 
 function App() {
-  const char1 = useCharacter()
+  const char1 = useCharacter('Art')
 
   const handleKeyDown = (e: KeyboardEvent) => {
     switch (e.code) {
@@ -36,7 +36,12 @@ function App() {
   return (
     <S.Container>
       <S.Map>
-        <Character x={char1.x} y={char1.y} side={char1.side} />
+        <Character
+          x={char1.x}
+          y={char1.y}
+          side={char1.side}
+          name={char1.name}
+        />
       </S.Map>
       <div>
         {/* <button onClick={moveUp}>UP</button>

@@ -15,15 +15,18 @@ type CharacterType = {
   x: number
   y: number
   side: CharacterSides
+  name: string
 }
 
-export default function Character({ x, y, side }: CharacterType) {
+export default function Character({ x, y, side, name }: CharacterType) {
   return (
     <S.Container
       size={SIZE}
       left={x * SIZE}
       top={y * SIZE}
       sidePos={SIDES[side] ?? 0}
-    ></S.Container>
+    >
+      {name}
+    </S.Container>
   )
 }
