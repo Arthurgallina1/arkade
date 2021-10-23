@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import * as S from './App.styles'
+import Breakout from './breakout'
+import Canvas from './Canvas'
 import Character from './Character/Character'
 import useCharacter from './hooks/useCharacter'
 
@@ -35,18 +37,18 @@ function App() {
 
   return (
     <S.Container>
-      <S.Map>
+      {/* <S.Map>
         <Character
           x={char1.x}
           y={char1.y}
           side={char1.side}
           name={char1.name}
         />
-      </S.Map>
-      <div>
-        {/* <button onClick={moveUp}>UP</button>
-        <button onClick={moveDown}>Down</button> */}
-      </div>
+      </S.Map> */}
+
+      {/* <Canvas height='500' width='500' /> */}
+
+      <Breakout />
     </S.Container>
   )
 }
