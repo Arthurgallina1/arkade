@@ -2,8 +2,8 @@ const data = {
   ballObj: {
     x: 20,
     y: 200,
-    dx: 3, //size of step
-    dy: 3, //step
+    dx: 5, //size of step
+    dy: 5, //step
     rad: 10,
     speed: 10,
   },
@@ -26,6 +26,7 @@ const data = {
     width: 100,
     x: 100,
     color: 'orange',
+    y: 30,
   },
 }
 
